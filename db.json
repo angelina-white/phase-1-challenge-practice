@@ -1,0 +1,30 @@
+{
+    "characters":
+    [
+        {
+            "name": "Michael",
+            "job": "Regional Sales Manager",
+            "id": 1
+        },
+        {
+            "name": "Dwigt",
+            "job": "Assistant Regional Manager",
+            "id": 2
+        },
+        {
+            "name": "Jim",
+            "job": "Salesman",
+            "id": 3
+        },
+        {
+            "name": "Pam",
+            "job": "Receptionist",
+            "id": 4
+        },
+        {
+            "name": "Kevin",
+            "job": "Accountant",
+            "id": 5
+        }
+    ]
+}
