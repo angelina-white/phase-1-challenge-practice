@@ -1,4 +1,4 @@
-const characterNames = ["Michael", "Holly", "Pam", "Jim", "Dwigt", "Darryl", "Andy", "Stanley", "Phyllis", "Angela", "Kevin", "Oscar", "Toby", "Kelly", "Ryan", "Holly"]
+const characterNames = ["Michael", "Pam", "Jim", "Dwigt", "Kevin"]
 const locationNumbers = [5, 2, 7, 3, 6, 9, 1]
 
 //array iteration:
@@ -41,5 +41,20 @@ function reduce() //adds all numbers together
 
 function forEach() //goes through each name and says hello to them
 {
-    characterNames.forEach(name => document.body.append("hello " + name))
+    const ul = document.createElement('ul')
+    const div = document.querySelector('div')
+    div.append(ul)
+    characterNames.forEach(function (name)
+    {
+        const li = document.createElement('li')
+        li.innerText = name
+        console.log(li)
+        ul.append(li)
+    })
 }
+
+
+//does something after page loads
+document.addEventListener('DOMContentLoaded', (event) => {
+    forEach();
+});
