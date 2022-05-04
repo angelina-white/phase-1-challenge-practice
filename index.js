@@ -53,8 +53,20 @@ function forEach() //goes through each name and says hello to them
     })
 }
 
+function form() //processes form, populates character from db
+{
+    const inputForm = document.querySelector('form');
+    inputForm.addEventListener('submit', (event) => 
+    {
+        event.preventDefault();
+        const input = document.querySelector('input#name');
+        console.log(input.value)
+    })
+}
+
 
 //does something after page loads
 document.addEventListener('DOMContentLoaded', (event) => {
     forEach();
+    form();
 });
